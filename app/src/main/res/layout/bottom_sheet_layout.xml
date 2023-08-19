@@ -1,4 +1,4 @@
-<LinearLayout
+<androidx.appcompat.widget.LinearLayoutCompat
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -21,20 +21,42 @@
         android:scaleType="centerCrop"
         android:contentDescription="@string/deskripsi_remove"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:id="@+id/tvBottomSheetTitle"
-        android:text="@string/bottom_sheet_title"
-        android:fontFamily="@font/maison_neue_medium"
-        android:textSize="18sp"
-        android:textColor="?attr/colorOnPrimary"/>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvPost"
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp" />
+        android:orientation="horizontal">
 
-</LinearLayout>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="bottom"
+            android:id="@+id/tvBottomSheetTitle"
+            android:text="@string/bottom_sheet_title"
+            android:fontFamily="@font/maison_neue_medium"
+            android:textSize="18sp"
+            android:textColor="?attr/colorOnPrimary"/>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/daySpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDisaster"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_gravity="center"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
