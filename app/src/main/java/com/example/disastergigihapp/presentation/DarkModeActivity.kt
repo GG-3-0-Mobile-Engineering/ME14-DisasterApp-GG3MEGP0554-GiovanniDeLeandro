@@ -6,18 +6,18 @@ import androidx.appcompat.app.AppCompatDelegate
 import com.example.disastergigihapp.data.local.AppPreferences
 import com.example.disastergigihapp.databinding.ActivityDarkModeBinding
 
-class DarkMode : AppCompatActivity() {
-    private lateinit var darkModeBinding: ActivityDarkModeBinding
+class DarkModeActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityDarkModeBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        darkModeBinding = ActivityDarkModeBinding.inflate(layoutInflater)
-        setContentView(darkModeBinding.root)
+        binding = ActivityDarkModeBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        darkModeBinding.buttonSettingsBack.setOnClickListener { finish() }
+        binding.buttonSettingsBack.setOnClickListener { finish() }
 
-        darkModeBinding.switchDarkMode.isChecked = AppPreferences.getDarkModePreference(this)
+        binding.switchDarkMode.isChecked = AppPreferences.getDarkModePreference(this)
 
-        darkModeBinding.switchDarkMode.setOnCheckedChangeListener { _, isChecked ->
+        binding.switchDarkMode.setOnCheckedChangeListener { _, isChecked ->
             AppPreferences.setDarkModePreference(this, isChecked)
             if (isChecked) {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
