@@ -12,5 +12,6 @@
         <item name="colorSecondary">@color/gojekGreen</item>
         <item name="colorOnSecondary">@color/white</item>
         <item name="colorTertiary">@color/black</item>
+        <item name="colorOnTertiary">@color/black30</item>
     </style>
 </resources>
