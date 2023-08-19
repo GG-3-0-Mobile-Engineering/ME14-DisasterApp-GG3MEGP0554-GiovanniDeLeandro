@@ -1,9 +1,13 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">Disaster Gigih App</string>
+    <string name="app_name">Gihsaster</string>
     <string name="mapbox_access_token" tools:ignore="Typos">pk.eyJ1IjoidmFubjUiLCJhIjoiY2xna2liOXlyMGN4ZzNrcXE3OWRna3V3OCJ9.5qrGGepGhDpKBYtH17dbJQ</string>
-    <string name="bottom_sheet_title">Informasi Bencana Terkini</string>
+    <string name="bottom_sheet_title">Informasi Bencana Dalam: </string>
     <string name="deskripsi_remove">Simbol Draggable</string>
-    <string name="deskripsi_konten_image_bencana">Foto Bencana</string>
+    <string name="deskripsi_konten_image_bencana">Foto bencana</string>
+    <string name="deskripsi_button_back_settings">Tombol back settings</string>
+    <string name="deskripsi_button_back_search">Tombol back search</string>
+    <string name="deskripsi_button_clear_search">Tombol untuk clear search</string>
+    <string name="deskripsi_button_settings">Tombol settings</string>
     <string name="hint_edit_text">Nama Provinsi</string>
     <string name="button_filter_satu">+ Banjir</string>
     <string name="button_filter_dua">+ Gempa</string>
@@ -11,9 +15,55 @@
     <string name="button_filter_empat">+ Kabut</string>
     <string name="button_filter_lima">+ Angin Kencang</string>
     <string name="button_filter_enam">+ Gunung Api</string>
-    <string name="deskripsi_button_settings">Button Settings</string>
     <string name="text_view_settings">Settings</string>
-    <string name="deskripsi_button_back_settings">Tombol Back Settings</string>
     <string name="text_view_dark_mode">Dark Mode</string>
     <string name="text_view_enable_dark_mode">Enable dark mode</string>
+    <string name="text_view_province">Province</string>
+
+
+    <string-array name="jumlah_hari">
+        <item>1 Hari</item>
+        <item>2 Hari</item>
+        <item>3 Hari</item>
+        <item>4 Hari</item>
+        <item>5 Hari</item>
+        <item>6 Hari</item>
+        <item>7 Hari</item>
+    </string-array>
+    <string-array name="daftar_provinsi">
+        <item>Aceh</item>
+        <item>Bali</item>
+        <item>Banten</item>
+        <item>Bengkulu</item>
+        <item>DI Yogyakarta</item>
+        <item>DKI Jakarta</item>
+        <item>Gorontalo</item>
+        <item>Jambi</item>
+        <item>Jawa Barat</item>
+        <item>Jawa Tengah</item>
+        <item>Jawa Timur</item>
+        <item>Kalimantan Barat</item>
+        <item>Kalimantan Selatan</item>
+        <item>Kalimantan Tengah</item>
+        <item>Kalimantan Timur</item>
+        <item>Kalimantan Utara</item>
+        <item>Kep Bangka Belitung</item>
+        <item>Kepulauan Riau</item>
+        <item>Lampung</item>
+        <item>Maluku Utara</item>
+        <item>Maluku</item>
+        <item>Nusa Tenggara Barat</item>
+        <item>Nusa Tenggara Timur</item>
+        <item>Papua Barat</item>
+        <item>Papua</item>
+        <item>Riau</item>
+        <item>Sulawesi Barat</item>
+        <item>Sulawesi Selatan</item>
+        <item>Sulawesi Tengah</item>
+        <item>Sulawesi Tenggara</item>
+        <item>Sulawesi Utara</item>
+        <item>Sumatera Barat</item>
+        <item>Sumatera Selatan</item>
+        <item>Sumatera Utara</item>
+    </string-array>
 </resources>
